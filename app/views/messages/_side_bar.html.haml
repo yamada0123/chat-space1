@@ -1,0 +1,28 @@
+.side-bar
+  .side-bar__header
+    .side-bar__header__box
+      %p.side-bar__header__box__name
+        nothing
+      %ul.side-bar__header__box__menu
+        %li.side-bar__header__box__menu__edit-user
+          = link_to "#" do
+            = icon('fas','edit')
+        %li.side-bar__header__box__menu__new-group
+          = link_to "#" do
+            = icon('fas','cog', class: "contents__btn--icon")
+
+  .side-bar__group-list
+    .side-bar__group-list__box
+      .side-bar__group-list__box__group
+        %p.side-bar__group-list__box__group-name
+          group-name
+      .side-bar__group-list__box__message
+        %p.side-bar__group-list__box__message-list
+          テストプレイ
+    .side-bar__group-list__box
+      .side-bar__group-list__box__group
+        %p.side-bar__group-list__box__group-name
+          group-name
+      .side-bar__group-list__box__message
+        %p.side-bar__group-list__box__message-list
+          テストプレイ

@@ -38,36 +38,38 @@
     height: calc(100vh - 100px);
     width: 300px;
     background-color: #2f3e51;
-    &__box {
-      height: 91px;
-      width: 100%;
-      position: relative;
-      &__group {
-        height: 15px;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        bottom: 0px;
-        left: 20px;
-        &-name {
-          color: #ffffff;
+    .group {
+      &-list__box {
+        height: 91px;
+        width: 100%;
+        position: relative;
+        &__group {
+          height: 15px;
           position: absolute;
-          bottom: -2px;
-          font-size: 15px;
+          top: 20px;
+          right: 20px;
+          bottom: 0px;
+          left: 20px;
+          &-name {
+            color: #ffffff;
+            position: absolute;
+            bottom: -2px;
+            font-size: 15px;
+          }
         }
-      }  
-      &__message {
-        height: 11px;
-        position: absolute;
-        top: 40px;
-        right: 20px;
-        bottom: 0px;
-        left: 20px;
-        &-list {
-          color: #ffffff;
+        &__message {
+          height: 11px;
           position: absolute;
-          top: 2px;
-          font-size: 11px;
+          top: 40px;
+          right: 20px;
+          bottom: 0px;
+          left: 20px;
+          &-list {
+            color: #ffffff;
+            position: absolute;
+            top: 2px;
+            font-size: 11px;
+          }
         }
       }
     }

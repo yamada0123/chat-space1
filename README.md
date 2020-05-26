@@ -41,6 +41,11 @@
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 
+<!-- t.string :content
+      t.string :image
+      t.references :group, foreign_key: true
+      t.references :user, foreign_key: true -->
+
 ### Association
 - belongs_to :group
 - belongs_to :user

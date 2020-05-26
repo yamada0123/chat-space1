@@ -129,87 +129,128 @@
       }
     }
   }
-  &__message-list {
+  .messages {
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+    padding: 46px 40px 0;
     height: calc(100vh - 100px - 90px);
-    width: calc(100vw - 300px);
-    background-color: #fafafa;
-    &__box {
-      position: relative;
-      padding-top: 35px;
-      margin-left: 40px;
-      width: calc(100vw - 300px - 40px);
-      &-name {
-        font-size: 16px;
-        margin-bottom: 12px;
-        color: #333333;
-        position: relative;
-        &-time {
-          color: #999999;
-          display: inline-block;
+    overflow: scroll;
+    .message {
+      .upper-message {
+        display: flex;
+        &__user-name {
+          color: #434a54;
+          font-size: 16px;
+          font-weight: bold;
+        }
+        &__date {
+          color: #999;
           font-size: 12px;
-          margin: -1px 0 0 10px;
-          position: absolute;
+          padding-left: 10px;
         }
       }
-      &-message {
-        font-size: 14px;
-        color: #434a54;
-      }
-      &-image {
-        height: 46px;
+      .lower-message {
+        margin-top: 10px;
+        &__content {
+          color: #434a54;
+          font-size: 14px;
+          margin-bottom: 40px;
+        }
       }
     }
   }
-  &__message-form {
+
+  .form {
     height: 90px;
     width: calc(100vw - 300px);
     background-color: #d2d2d2;
     position: relative;
-    &__box-btn {
-      position: absolute;
-      top: 20px;
-      right: 40px;
-      height: 50px;
-      width: 100px;
-      background-color: #38aef0;
-      text-align: center;
-      line-height: 50px;
-      a {
-        text-decoration: none;
-        display: block;
-        color: white;
-      }
-    }
-    &__box {
+    .form__message {
       height: 50px;
       width: calc(100vw - 300px - 80px - 15px - 100px);
       position: absolute;
       top: 20px;
       left: 40px;
       background-color: white;
-      position: relative;
-      &-text {
-        color: gray;
-        position: absolute;
-        top: 12px;
-        left: 10px;
-      }
-      &-image {
-        width: 25px;
-        height: 100%;
-        right: 10px;
-        position: absolute;
-        .image__reference-btn {
-          display: none;
-        }
-        .input-box__image {
-          font-size: 1.5rem;
-          margin-top: 7px;
-          display: block;
-          cursor: pointer;
-        }
+    }
+    .form__mask__image {
+      position: absolute;
+      top: 30px;
+      font-size: 1.5rem;
+      right: 170px;
+      cursor: pointer;
+      display: block;
+      .hidden {
+        display: none;
+        text-decoration: none;
       }
     }
-  } 
+    .form__submit {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 100px;
+      height: 50px;
+      display: inline-block;
+      background-color: #38aef0;
+      color: white;
+      cursor: pointer;
+    }
+  }
 }
 
+
+
+//   }
+//   &__message-form {
+//     height: 90px;
+//     width: calc(100vw - 300px);
+//     background-color: #d2d2d2;
+//     position: relative;
+//     .form__message {
+//       position: absolute;
+//       top: 20px;
+//       right: 40px;
+//       height: 50px;
+//       width: 100px;
+//       background-color: #38aef0;
+//       text-align: center;
+//       line-height: 50px;
+//       a {
+//         text-decoration: none;
+//         display: block;
+//         color: white;
+//       }
+//     }
+//     &form__mask {
+//       height: 50px;
+//       width: calc(100vw - 300px - 80px - 15px - 100px);
+//       position: absolute;
+//       top: 20px;
+//       left: 40px;
+//       background-color: white;
+//       position: relative;
+//       &-text {
+//         color: gray;
+//         position: absolute;
+//         top: 12px;
+//         left: 10px;
+//       }
+//       &-image {
+//         width: 25px;
+//         height: 100%;
+//         right: 10px;
+//         position: absolute;
+//         .image__reference-btn {
+//           display: none;
+//         }
+//         .input-box__image {
+//           font-size: 1.5rem;
+//           margin-top: 7px;
+//           display: block;
+//           cursor: pointer;
+//         }
+//       }
+//     }
+//   } 
+// }
